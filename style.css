@@ -1,0 +1,568 @@
+@media only screen and (min-width: 600px) {
+
+
+summary,.logo-phone{
+    display: none;
+    }
+
+    body {  /*Se aplica directamente al body para que todas las paginas compartan el mismo fondo*/
+       
+       
+        background-color: rgb(64, 63, 78);
+        color: aliceblue;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    
+    
+    h1,h2 { color: aliceblue;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+    
+    
+    .banner {               /*contenedor del logo*/
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+    
+    .logo {                 /*Permite regular el tamaño de la imagen del banner*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        
+     
+    }
+    
+    .titulo-bienvenida {
+        justify-content: center;
+        display: flex;
+        
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    
+    
+    article {                /*Esta clase solo contiene a las demas de la pagina principal para poderlas acomodar apropiadamente mediante flex*/
+        display: flex;
+        
+    }
+    
+    
+    section {          /*Esta clase contiene todo el contenido excepto el apartado de noticias*/
+        margin-top: 2%;
+        display: block;
+        background-color: rgb(46, 54, 61);
+        width: 75%;
+        border-radius: 2%;
+    }
+    
+    /*Inicio de apartado de noticias*/
+    
+    aside {   /*Clase para las noticias que estan a la derecha de la pagina*/
+        display: flex;
+        background-color:  rgb(46, 54, 61);
+        
+        flex-direction: column;
+        width: 25%;
+        margin-top: 2%;
+        margin-right: 10px;
+        margin-left: 5px;
+        border-radius: 2%;
+    
+    }
+    
+    h2{ border-bottom: aliceblue;}
+    
+    .titulo-noticias{
+        padding: 2%;
+        border-bottom: aliceblue;
+        text-align: center;
+    }
+    
+    .noticias {
+        display: flex;
+        background-color: rgb(106, 115, 122);
+        color: aliceblue;
+        padding: 5px;
+        margin-top: 20px;
+        margin-left: 10px;
+    
+    }
+    .noticias:hover{
+        background-color: coral;}
+    
+    .img-noticia{
+        
+        width: 20%;
+    }
+    
+    /*Fin de apartado de noticias*/
+    
+    /*Comienzo del resto del contenido de la pagina principal*/
+    
+    p{
+        
+        color: aliceblue;
+        padding: 2%;
+        
+    }
+    
+    .inline{
+        font-weight: 100;
+    }
+    
+    .mapa {
+        display: block;
+        margin-left:7% ;
+        width: 80%;
+        padding: 2%;
+    }
+    
+    .subt-lineas, .desarrollo, .introduccion-a-la-pagina {
+        display: block;
+        color: aliceblue;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2%;
+        
+    }
+    
+    .desarrollo {
+        justify-content: center;
+    }
+    
+    .lista-carriles{
+        color: aliceblue;
+        
+    
+    }
+    
+    
+    /* Clases referentes a la barra de navegacion */
+    
+    
+    nav{
+        display: flex;
+        
+        border-bottom: coral;
+        justify-content: center;
+        border-radius: 2% ;
+        background-color: rgb(46, 54, 61);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        -webkit-box-shadow: 0px 24px 23px 0px rgba(0,0,0,0.32);
+        -moz-box-shadow: 0px 24px 23px 0px rgba(0,0,0,0.32);
+        box-shadow: 0px 24px 23px 0px rgba(0,0,0,0.32);
+    }
+    
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif   ;
+    }
+    
+    .item-de-navegacion {    /*Separa entre si a cada elemento de la barra de navegacion*/
+        display: block;
+        border-radius: 7%;
+        padding: 5px;
+        margin: 50px;
+    }
+    
+    .item-de-navegacion:hover{
+        background-color: coral;
+    }
+    
+    .footer {
+        display: block;
+        color: aliceblue;
+        margin-left: auto;
+        margin-top: 0.5%;
+        margin-right: auto;
+        background-color:rgb(46, 54, 61);
+        border-radius: 2px;
+    }
+    
+    
+    /*Inicio del apartado de la pagina de registro*/
+    
+    .oculto{
+        display: none;
+     }
+        
+    
+    .registro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10%;
+        padding: 3%;
+        margin: auto;
+        margin-top: 3%;
+        background-color: rgb(46, 54, 61);
+        color: aliceblue;
+        width: 45%;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        
+    }
+    .contenedor-usuarios-padre{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    input[type=password], input[type=text]{
+        color: aliceblue;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border-bottom: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color:  rgba(97, 105, 112, 0.655);
+    }
+    
+    
+    input[type=submit], #btncomprobar{
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .suscripcion{
+        display: block;
+        margin: 5%;
+    
+    }
+    
+    
+    /* Inicio del apartado de la pagina de escena competitiva  */
+    
+    #titulo_prediccion{
+        text-align: center;
+    }
+    
+    #link_personalizado{
+        text-decoration: underline;
+    }
+    
+    #input_de_tabla{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    /*Los siguientes estilos corresponden a la tabla*/
+
+    thead{
+        text-align: center;
+    }
+
+    table,tr,td{
+        text-align: center;
+        color: aliceblue;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        border: 1px solid;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    tr:hover{
+        background-color: coral;
+    }
+    
+    li{
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+    }
+
+
+  
+
+
+        
+    
+body {  /*Se aplica directamente al body para que todas las paginas compartan el mismo fondo*/
+    
+    background-color: rgb(64, 63, 78);
+    color: aliceblue;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.banner {               /*contenedor del logo*/
+    display: flex;
+    justify-content: center;
+   
+}
+.logo{
+    display: none;
+}
+.logo-phone {                 /*Permite regular el tamaño de la imagen del banner*/
+    display: block;
+    margin-top: 2%;
+    padding-right: 10%;
+    
+    width: 70%;
+    height: 80%;
+    
+ 
+}
+h1,h2 { 
+    
+    color: aliceblue;
+    border-bottom: 2px aliceblue;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.titulo-bienvenida {
+    justify-content: center;
+    display: flex;
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+article {                /*Esta clase solo contiene a las demas de la pagina principal para poderlas acomodar apropiadamente mediante flex*/
+    display: block;
+    
+}
+
+
+section {          /*Esta clase contiene todo el contenido excepto el apartado de noticias*/
+    margin-top: 2%;
+    display: block;
+    background-color: rgb(46, 54, 61);
+    width: auto;
+    border-radius: 2%;
+}
+
+/*Inicio de apartado de noticias*/
+
+aside {   /*Clase para las noticias que estan a la derecha de la pagina*/
+    display: flex;
+    background-color:  rgb(46, 54, 61);
+    overflow: scroll;
+    width: auto;
+    margin-top: 2%;
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 2%;
+
+}
+
+
+
+.titulo-noticias{
+    padding: 2%;
+    border-bottom: aliceblue;
+    text-align: center;
+}
+
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(106, 115, 122);
+    color: aliceblue;
+    padding: 8%;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+  
+
+}
+.noticias:hover{
+    background-color: coral;}
+
+.img-noticia{
+    
+    width: 100%;
+}
+
+/*Fin de apartado de noticias*/
+
+/*Comienzo del resto del contenido de la pagina principal*/
+
+p{
+    
+    color: aliceblue;
+    padding: 2%;
+    width: 80%;
+    
+}
+
+.inline{
+    font-weight: 100;
+}
+
+.mapa {
+    display: block;
+    margin-left:7% ;
+    width: 80%;
+    padding: 2%;
+}
+
+.subt-lineas, .desarrollo, .introduccion-a-la-pagina {
+    display: block;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    
+}
+
+.desarrollo {
+    justify-content: center;
+}
+
+.lista-carriles{
+    color: aliceblue;
+    
+
+}
+
+
+/* Clases referentes a la barra de navegacion */
+
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10% ;
+    background-color: rgb(46, 54, 61);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    -webkit-box-shadow: 0px 24px 23px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 24px 23px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 24px 23px 0px rgba(0,0,0,0.32);
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+details{
+   
+    display: block;
+    border-radius: 7%;
+    padding: 5px;
+    margin: 5%;
+    width: 16%;
+}
+
+.item-de-navegacion-phone{
+
+    display: block;
+    border-radius: 7%;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.item-de-navegacion-phone:hover{
+    background-color: coral;
+    }
+.item-de-navegacion {    /*Separa entre si a cada elemento de la barra de navegacion*/
+    visibility: hidden;
+    display: none;
+}
+
+
+.footer {
+    display: block;
+    color: aliceblue;
+    margin-left: auto;
+    margin-top: 0.5%;
+    margin-right: auto;
+    background-color:rgb(46, 54, 61);
+    border-radius: 2px;
+}
+
+.oculto{
+    display: none;
+ }
+    
+
+.registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    padding: 20%;
+    margin: auto;
+    margin-top: 3%;
+    background-color: rgb(46, 54, 61);
+    color: aliceblue;
+    width: 45%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+.contenedor-usuarios-padre{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type=password], input[type=text]{
+    color: aliceblue;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:  rgba(97, 105, 112, 0.655);
+}
+
+
+input[type=submit], #btncomprobar{
+    margin: 0 auto;
+    display: block;
+}
+
+.suscripcion{
+    display: block;
+    margin: 5%;
+
+}
+
+
+/* Inicio del apartado de la pagina de escena competitiva  */
+
+#input_de_tabla{ /*Corresponde al input donde el usuario ingresa los datos de la tabla*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+thead{
+    text-align: center;
+}
+
+table,tr,td{
+    text-align: center;
+    color: aliceblue;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:hover{
+    background-color: coral;
+}
+
+li{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+    

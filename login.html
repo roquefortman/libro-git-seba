@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="banner">
+        <img class="logo" src="imagenes/logo registro.png" alt="Logo de la pagina">
+    </div>
+
+    <nav>
+        <details>
+            <summary> </summary>
+
+
+            <div class="item-de-navegacion-phone"><a href="index.html.html" target="_blank">Pagina principal</a></div>
+
+            <div class="item-de-navegacion-phone"> <a href="https://www.leagueoflegends.com/es-es/"
+                    target="_blank">League of Legends</a></div>
+
+            <div class="item-de-navegacion-phone"><a href="Escena competitiva.html" target="_blank">Escena
+                    competitiva</a></div>
+
+            <div class="item-de-navegacion-phone"><a href="login.html" target="_blank">Registro</a></div>
+
+        </details>
+
+        <img class="logo-phone" src="imagenes/logo registro.png" alt="Logo de la pagina">
+       
+        <div class="item-de-navegacion"><a href="index.html.html" target="_blank">Pagina principal</a></div>
+
+        <div class="item-de-navegacion"> <a href="https://www.leagueoflegends.com/es-es/" target="_blank">Pagina oficial de League of Legends</a></div>
+
+        <div class="item-de-navegacion"><a href="Escena competitiva.html" target="_blank">Escena competitiva</a></div>
+
+        <div class="item-de-navegacion"><a href="login.html" target="_blank">Registro</a></div>
+    
+    </nav>
+
+    <div class="registro">
+        <div class="registro-junior">
+            <h1>Registro</h1>
+
+            <form id="form_registro" class="input-usuario">
+                <div class="contenedor-usuarios-padre">
+                    <div class="contenedor-usuarios">
+                        Usuario: <input type="text" name="usuario" placeholder="nombre..." />
+
+                    </div>
+                    <div class="contenedor-usuarios">
+                        Correo electrónico: <input type="text" name="correo-electronico"
+                            placeholder="email@gmail.com...    " />
+
+                    </div>
+                    <div class="contenedor-usuarios">
+                        Contraseña: <input type="password" name="contraseña" placeholder="contraseña..." />
+
+                    </div>
+                </div>
+           
+
+                <div class="input-sexo">
+                    Sexo:
+                    Masculino<input type="radio" name="sexo" value="Masculino" />
+
+                    Femenino<input type="radio" name="sexo" value="Femenino" />
+
+                    Helicoptero apache<input type="radio" name="sexo" value="Helicoptero apache" />
+
+                    Otro<input type="radio" name="sexo" value="Otro" />
+
+            
+                    <p>¿Cuales son tus campeones del tutorial favoritos?</p>
+                    Miss Fortune<input type="checkbox" name="campeonfav" value="miss fortune">
+                    Maestro Yi<input type="checkbox" name="campeonfav" value="maestro yi">
+                    Lux<input type="checkbox" name="campeonfav" value="lux">
+                    Ashe<input type="checkbox" name="campeonfav" value="ashe">
+                    Brand<input type="checkbox" name="campeonfav" value="brand">
+                    Darius<input type="checkbox" name="campeonfav" value="darius">
+                
+                    <p>¿En que posiciones sueles jugar?</p>
+                    Top<input type="checkbox" name="posicion" value="top">
+                    Jungla<input type="checkbox" name="posicion" value="jungla">
+                    Mid<input type="checkbox" name="posicion" value="mid">
+                    Support<input type="checkbox" name="posicion" value="support">
+                    ADC<input type="checkbox" name="posicion" value="adc">
+            
+                    <div class="suscripcion"> Deseo suscribirme a notificaciones por E-Mail<input type="checkbox" name="suscripcion" value=""></div>
+
+                    <input type="submit" name="btnenviar" value="Enviar" id="btnenviar">
+                </div>
+
+                <div id="captcha" class="oculto">
+        
+                    <p>Introduzca el numero mostrado a continuacion:</p>
+                
+                    <p id="numerocaptcha"></p>
+                
+                
+                    <form>
+                        <input id="numcomprobacion" type="text">
+                    </form>
+                
+                    <p id="txtcorrecto" class="oculto">El numero introducido es correcto</p>
+                
+                    <p id="txtincorrecto" class="oculto">El numero introducido es incorrecto</p>
+                
+                    <button id="btncomprobar">Comprobar</button>
+               </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
