@@ -1,0 +1,3 @@
+[submodule "PhotoAlbum"]
+	path = PhotoAlbum
+	url = https://gitlab.com/unicen/Web2/Practicos/PhotoAlbum.git
